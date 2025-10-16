@@ -5,6 +5,14 @@
     width: 100%;
     text-align: center;
     font-style: italic;
+    align-items: center;
+}
+.header-icon{
+    width: 12rem;
+}
+.header-text{
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }

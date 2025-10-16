@@ -4,7 +4,8 @@ import './Header.css'
 function Header() {
   return (
     <div className='Header'>
-        <h1>Header</h1>
+        <div className='header-icon'>Book Library Icon</div>
+        <h2 className='header-text'>Book Library</h2>
     </div>
   )
 }

@@ -1,9 +1,10 @@
 .Sidebar{
     background-color: lightgrey;
-    display: flex;
-    height: calc(100vh - 2rem);
+    display: flex;  
+    height: calc(100vh - 3rem);
     width: 12rem;
     padding-top: 1rem;
+    overflow-y: auto;
     flex-direction: column;
     gap: 6px;
 }

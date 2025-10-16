@@ -1,5 +1,5 @@
 .SidebarItem{
-    height: 2rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -7,4 +7,9 @@
     font-weight: 400;
     font-size: large;
     padding-left: 1rem;
+}
+.SidebarItem:hover{
+    background-color: #717171;
+    cursor: pointer;
+    color: white;
 }

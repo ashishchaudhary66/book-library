@@ -1,4 +1,4 @@
-[
+export const booksData = [
   {
     "id": "1",
     "title": "Atomic Habits",
