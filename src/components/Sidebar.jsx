@@ -3,11 +3,14 @@ import './Sidebar.css'
 import SidebarItem from './utils/SidebarItem'
 
 function Sidebar() {
+    const sidebarItem = ["All", "Read", "Unread"]
   return (
     <div className='Sidebar'>
-        <SidebarItem item='All' />
-        <SidebarItem item='Read' />
-        <SidebarItem item='Unread' />
+        {
+            sidebarItem.map((item, index) => {
+                return <SidebarItem key={index} item={item} />
+            })
+        }
     </div>
   )
 }
