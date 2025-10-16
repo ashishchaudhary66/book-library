@@ -1,0 +1,9 @@
+.Sidebar{
+    background-color: lightgrey;
+    display: flex;
+    height: calc(100vh - 2rem);
+    width: 12rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    gap: 6px;
+}
