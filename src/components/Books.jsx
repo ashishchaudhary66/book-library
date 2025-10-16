@@ -1,9 +1,8 @@
 import React from 'react'
 import './Books.css'
-import {booksData} from '../data/book-data'
 import Book from './utils/Book'
 
-function Books() {
+function Books({booksData}) {
 
   return (
     <div className='Books'>
