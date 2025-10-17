@@ -1,11 +1,12 @@
 import React from 'react'
 import './Container.css'
 import Books from './Books'
-import {booksData} from '../data/book-data'
 import BookDetails from './utils/BookDetails'
 import { Route, Routes } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 
 function Container() {
+    const booksData = useSelector((state) => state.books.booksData);
     const readBooks = booksData.filter((book) => book.read)
     const unreadBooks = booksData.filter((book) => !book.read)
   return (

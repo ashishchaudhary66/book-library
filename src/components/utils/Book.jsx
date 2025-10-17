@@ -15,9 +15,6 @@ function Book({book}) {
         <div>
             <span>Read: </span><span className='italic'>{book.read?"true":"false"}</span>
         </div>
-        <div>
-            <span><a className='italic'>edit</a></span>
-        </div>
     </div>
   )
 }
