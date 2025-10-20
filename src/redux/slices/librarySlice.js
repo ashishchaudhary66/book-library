@@ -18,7 +18,7 @@ export const booksSlice = createSlice({
     updateBook: (state, action) => {
       const id = action.payload.id
       state.booksData = state.booksData.map((book) => {
-        if(book.id == id){
+        if(book.id === id){
             return action.payload
         }
         return book;
@@ -26,7 +26,7 @@ export const booksSlice = createSlice({
     },
     toggleRead: (state, action) => {
        state.booksData = state.booksData.map((book) => {
-        if(book.id == action.payload.id){
+        if(book.id === action.payload.id){
             return {
                 ...book,
                 read : !book.read

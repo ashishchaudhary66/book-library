@@ -2,12 +2,10 @@ import React from "react";
 import "./BookDetails.css";
 import "./Book.css";
 import { NavLink, useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleRead } from "../../redux/slices/librarySlice";
+import { useSelector } from "react-redux";
 
 function BookDetails() {
   const booksData = useSelector((state) => state.books.booksData);
-  const dispatch = useDispatch();
   const { id } = useParams();
   const book = booksData.find((b) => b.id === id);
   if (!book) {
