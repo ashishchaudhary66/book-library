@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateBook } from "../redux/slices/librarySlice";
 
 function Update() {
-  const booksData = useSelector((state) => state.books.booksData)
-  const { id } = useParams()
-  const book = booksData.find((b) => b.id === id)
+  const booksData = useSelector((state) => state.books.booksData);
+  const { id } = useParams();
+  const book = booksData.find((b) => b.id === id);
   const [formData, setFormData] = useState(book);
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
@@ -30,10 +30,11 @@ function Update() {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.title.trim()) newErrors.title = 'Title is required';
-    if (!formData.author.trim()) newErrors.author = 'Author is required';
-    if (!formData.description.trim()) newErrors.description = 'Description is required';
-    if (!formData.published) newErrors.published = 'Published date is required';
+    if (!formData.title.trim()) newErrors.title = "Title is required";
+    if (!formData.author.trim()) newErrors.author = "Author is required";
+    if (!formData.description.trim())
+      newErrors.description = "Description is required";
+    if (!formData.published) newErrors.published = "Published date is required";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -45,14 +46,11 @@ function Update() {
 
     setSubmitting(true);
 
-    // Simulate async submission (e.g., API call)
-    setTimeout(() => {
-      dispatch(updateBook(formData));
-      alert('Book updated successfully!');
-      setSubmitting(false);
-    }, 1000);
+    dispatch(updateBook(formData));
+    alert("Book updated successfully!");
+    setSubmitting(false);
   };
-      
+
   return (
     <div className="Update">
       <h4>Update Book</h4>
@@ -130,7 +128,7 @@ function Update() {
         </div>
 
         <button type="submit" disabled={submitting}>
-          {submitting ? 'Updating...' : 'Update Book'}
+          {submitting ? "Updating..." : "Update Book"}
         </button>
       </form>
     </div>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './AddBook.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { addBook } from '../redux/slices/librarySlice';
+import React, { useState } from "react";
+import "./AddBook.css";
+import { useSelector, useDispatch } from "react-redux";
+import { addBook } from "../redux/slices/librarySlice";
 
 function AddBook() {
   const booksData = useSelector((state) => state.books.booksData);
@@ -20,11 +20,11 @@ function AddBook() {
 
   const [formData, setFormData] = useState({
     id: getMaxId(),
-    title: '',
-    author: '',
-    description: '',
+    title: "",
+    author: "",
+    description: "",
     read: false,
-    published: '',
+    published: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -47,10 +47,11 @@ function AddBook() {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.title.trim()) newErrors.title = 'Title is required';
-    if (!formData.author.trim()) newErrors.author = 'Author is required';
-    if (!formData.description.trim()) newErrors.description = 'Description is required';
-    if (!formData.published) newErrors.published = 'Published date is required';
+    if (!formData.title.trim()) newErrors.title = "Title is required";
+    if (!formData.author.trim()) newErrors.author = "Author is required";
+    if (!formData.description.trim())
+      newErrors.description = "Description is required";
+    if (!formData.published) newErrors.published = "Published date is required";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -62,21 +63,17 @@ function AddBook() {
 
     setSubmitting(true);
 
-    // Simulate async submission (e.g., API call)
-    setTimeout(() => {
-      dispatch(addBook(formData));
-      alert('Book added successfully!');
-      // Reset form
-      setFormData({
-        id: getMaxId(),
-        title: '',
-        author: '',
-        description: '',
-        read: false,
-        published: '',
-      });
-      setSubmitting(false);
-    }, 1000);
+    dispatch(addBook(formData));
+    alert("Book added successfully!");
+    setFormData({
+      id: getMaxId(),
+      title: "",
+      author: "",
+      description: "",
+      read: false,
+      published: "",
+    });
+    setSubmitting(false);
   };
 
   return (
@@ -156,7 +153,7 @@ function AddBook() {
         </div>
 
         <button type="submit" disabled={submitting}>
-          {submitting ? 'Adding...' : 'Add Book'}
+          {submitting ? "Adding..." : "Add Book"}
         </button>
       </form>
     </div>
