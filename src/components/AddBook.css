@@ -1,0 +1,82 @@
+.AddBook {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.AddBook h4 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+.AddBook form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.AddBook label {
+  display: block;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.AddBook input[type="text"],
+.AddBook input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.AddBook input[type="text"]:focus,
+.AddBook input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.AddBook .error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.AddBook div label input[type="radio"] {
+  margin-right: 6px;
+}
+
+.AddBook div label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+.AddBook button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.AddBook button:hover {
+  background-color: #0056b3;
+}
+
+.AddBook button:disabled {
+  background-color: #a5c8f5;
+  cursor: not-allowed;
+}

@@ -2,8 +2,7 @@ import React from 'react'
 import './Books.css'
 import Book from './utils/Book'
 
-function Books({booksData}) {
-
+function Books({booksData}) {   
   return (
     <div className='Books'>
         {

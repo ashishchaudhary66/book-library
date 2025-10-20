@@ -1,3 +1,66 @@
-.BookDetails{
-    width: 100%;
+.BookDetails {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.BookDetails div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.BookDetails div:last-child {
+  border-bottom: none;
+}
+
+.BookDetails span:first-child {
+  font-weight: 600;
+  color: #555;
+}
+
+.BookDetails span:last-child {
+  color: #222;
+  text-align: right;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.BookDetails a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.BookDetails a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .BookDetails {
+    padding: 20px;
+  }
+
+  .BookDetails div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .BookDetails span:last-child {
+    text-align: left;
+    margin-top: 4px;
+  }
 }

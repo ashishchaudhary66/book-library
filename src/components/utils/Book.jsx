@@ -4,16 +4,20 @@ import { useNavigate } from 'react-router-dom'
 
 function Book({book}) {
     const navigate = useNavigate();
+    const title = book.title
+    const published = book.published
+    const author = book.author
+
   return (
-    <div className='Book' onClick={() => navigate(`/books/details/${book.id}`)}>
+    <div className={`Book ${book.read ? "read" : "unread"}`} onClick={() => navigate(`/books/details/${book.id}`)}>
         <div>
-            <span>Title: </span><span className='italic bold'>{book.title}</span>
+            <span>Title: </span><span >{title.length<18?title:title.substring(0,14)+'...'}</span>
         </div>
         <div>
-            <span>Published: </span><span className='italic'>{book.published}</span>
+            <span>Published: </span><span >{published.length<18?published:published.substring(0,14)+'...'}</span>
         </div>
         <div>
-            <span>Read: </span><span className='italic'>{book.read?"true":"false"}</span>
+            <span>Author: </span><span >{author.length<18?author:author.substring(0,14)+'...'}</span>
         </div>
     </div>
   )
