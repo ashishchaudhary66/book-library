@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+<img width="315" height="28" alt="image" src="https://github.com/user-attachments/assets/bbebb82c-fee8-4622-98be-c73208a39870" /># Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Surge Deployed
+
+This project is deployed on Surge and URL is [https://wicked-purpose.surge.sh](https://wicked-purpose.surge.sh/).
 
 ## Available Scripts
 
