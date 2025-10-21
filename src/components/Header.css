@@ -5,10 +5,14 @@
     width: 100%;
     text-align: center;
     font-style: italic;
-    align-items: center;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .header-icon{
     width: 12rem;
+    display: flex;
+    align-items: left;
 }
 .header-text{
     width: 100%;

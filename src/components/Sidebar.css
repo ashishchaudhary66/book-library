@@ -7,4 +7,5 @@
     overflow-y: auto;
     flex-direction: column;
     gap: 6px;
+    border: 0;
 }
