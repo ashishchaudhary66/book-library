@@ -31,16 +31,14 @@
   font-weight: 600;
 }
 
-/* Read / Unread visual cues (for fallback if inline styles are removed) */
 .Book.read {
-  background-color: #2e8b57; /* green */
+  background-color: #2e8b57;
 }
 
 .Book.unread {
-  background-color: #c0392b; /* red */
+  background-color: #c0392b;
 }
 
-/* Responsive layout */
 @media (max-width: 600px) {
   .Book {
     padding: 15px;
