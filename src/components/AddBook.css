@@ -1,82 +1,102 @@
 .AddBook {
-  max-width: 500px;
-  margin: 20px auto;
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-family: "Poppins", sans-serif;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.AddBook h4 {
+.AddBook h2 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #333;
-  font-size: 1.6rem;
-  letter-spacing: 0.5px;
 }
 
-.AddBook form {
+form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 15px;
 }
 
-.AddBook label {
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
   display: block;
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 6px;
+  color: #555;
 }
 
-.AddBook input[type="text"],
-.AddBook input[type="date"] {
+.form-group input,
+.form-group textarea {
   width: 100%;
-  padding: 10px 12px;
+  padding: 10px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  transition: border-color 0.2s ease;
+  font-size: 14px;
+  transition: border-color 0.2s;
 }
 
-.AddBook input[type="text"]:focus,
-.AddBook input[type="date"]:focus {
-  border-color: #007bff;
+.form-group input:focus,
+.form-group textarea:focus {
   outline: none;
+  border-color: #007bff;
 }
 
-.AddBook .error {
-  color: #e74c3c;
-  font-size: 0.85rem;
-  margin-top: 4px;
+textarea {
+  resize: vertical;
+  min-height: 60px;
 }
 
-.AddBook div label input[type="radio"] {
-  margin-right: 6px;
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
 }
 
-.AddBook div label {
-  margin-right: 15px;
-  font-weight: normal;
+.preview-image {
+  margin-top: 10px;
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-.AddBook button {
-  margin-top: 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+button {
   padding: 12px;
-  border-radius: 8px;
-  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: background-color 0.2s;
 }
 
-.AddBook button:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-.AddBook button:disabled {
-  background-color: #a5c8f5;
+button:disabled {
+  background-color: #7aa7e0;
   cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .AddBook {
+    margin: 20px;
+    padding: 20px;
+  }
+  .preview-image {
+    width: 80px;
+    height: 120px;
+  }
 }

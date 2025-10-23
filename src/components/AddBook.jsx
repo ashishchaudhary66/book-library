@@ -11,9 +11,7 @@ function AddBook() {
     let id = 0;
     for (let book of booksData) {
       const bookId = parseInt(book.id, 10);
-      if (id < bookId) {
-        id = bookId;
-      }
+      if (id < bookId) id = bookId;
     }
     return (id + 1).toString();
   };
@@ -23,8 +21,10 @@ function AddBook() {
     title: "",
     author: "",
     description: "",
-    read: false,
     published: "",
+    image: "",
+    rating: 0,
+    read: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -34,15 +34,12 @@ function AddBook() {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: name === "rating" ? parseFloat(value) : value,
     }));
   };
 
   const handleRadioChange = (value) => {
-    setFormData((prev) => ({
-      ...prev,
-      read: value,
-    }));
+    setFormData((prev) => ({ ...prev, read: value }));
   };
 
   const validateForm = () => {
@@ -52,6 +49,9 @@ function AddBook() {
     if (!formData.description.trim())
       newErrors.description = "Description is required";
     if (!formData.published) newErrors.published = "Published date is required";
+    if (!formData.image.trim()) newErrors.image = "Image URL is required";
+    if (formData.rating < 0 || formData.rating > 5)
+      newErrors.rating = "Rating must be between 0 and 5";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -62,7 +62,6 @@ function AddBook() {
     if (!validateForm()) return;
 
     setSubmitting(true);
-
     dispatch(addBook(formData));
     alert("Book added successfully!");
     setFormData({
@@ -70,8 +69,10 @@ function AddBook() {
       title: "",
       author: "",
       description: "",
-      read: false,
       published: "",
+      image: "",
+      rating: 0,
+      read: false,
     });
     setSubmitting(false);
   };
@@ -79,82 +80,58 @@ function AddBook() {
   return (
     <div className="AddBook">
       <form onSubmit={handleSubmit}>
-        <h4>Add Book</h4>
-        <div>
-          <label htmlFor="title">Title</label>
-          <input
-            name="title"
-            type="text"
-            value={formData.title}
-            onChange={handleChange}
-            disabled={submitting}
-          />
+        <h2>Add Book</h2>
+
+        <div className="form-group">
+          <label>Title</label>
+          <input name="title" type="text" value={formData.title} onChange={handleChange} disabled={submitting}/>
           {errors.title && <p className="error">{errors.title}</p>}
         </div>
 
-        <div>
-          <label htmlFor="author">Author</label>
-          <input
-            name="author"
-            type="text"
-            value={formData.author}
-            onChange={handleChange}
-            disabled={submitting}
-          />
+        <div className="form-group">
+          <label>Author</label>
+          <input name="author" type="text" value={formData.author} onChange={handleChange} disabled={submitting}/>
           {errors.author && <p className="error">{errors.author}</p>}
         </div>
 
-        <div>
-          <label htmlFor="description">Description</label>
-          <input
-            name="description"
-            type="text"
-            value={formData.description}
-            onChange={handleChange}
-            disabled={submitting}
-          />
+        <div className="form-group">
+          <label>Description</label>
+          <textarea name="description" value={formData.description} onChange={handleChange} disabled={submitting}/>
           {errors.description && <p className="error">{errors.description}</p>}
         </div>
 
-        <div>
-          <label htmlFor="published">Published</label>
-          <input
-            name="published"
-            type="date"
-            value={formData.published}
-            onChange={handleChange}
-            disabled={submitting}
-          />
+        <div className="form-group">
+          <label>Published</label>
+          <input name="published" type="date" value={formData.published} onChange={handleChange} disabled={submitting}/>
           {errors.published && <p className="error">{errors.published}</p>}
         </div>
 
-        <div>
-          <label>Read</label>
-          <label>
-            <input
-              type="radio"
-              name="read"
-              checked={formData.read === true}
-              onChange={() => handleRadioChange(true)}
-              disabled={submitting}
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="read"
-              checked={formData.read === false}
-              onChange={() => handleRadioChange(false)}
-              disabled={submitting}
-            />
-            No
-          </label>
+        <div className="form-group">
+          <label>Image URL</label>
+          <input name="image" type="text" value={formData.image} onChange={handleChange} disabled={submitting}/>
+          {errors.image && <p className="error">{errors.image}</p>}
+          {formData.image && <img className="preview-image" src={formData.image} alt="Book Preview"/>}
         </div>
 
-        <button type="submit" disabled={submitting}>
-          {submitting ? "Adding..." : "Add Book"}
-        </button>
+        <div className="form-group">
+          <label>Rating (0-5)</label>
+          <input name="rating" type="number" min="0" max="5" step="0.1" value={formData.rating} onChange={handleChange} disabled={submitting}/>
+          {errors.rating && <p className="error">{errors.rating}</p>}
+        </div>
+
+        <div className="form-group">
+          <label>Read</label>
+          <div className="radio-group">
+            <label>
+              <input type="radio" name="read" checked={formData.read === true} onChange={() => handleRadioChange(true)} disabled={submitting}/> Yes
+            </label>
+            <label>
+              <input type="radio" name="read" checked={formData.read === false} onChange={() => handleRadioChange(false)} disabled={submitting}/> No
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" disabled={submitting}>{submitting ? "Adding..." : "Add Book"}</button>
       </form>
     </div>
   );

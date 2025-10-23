@@ -14,7 +14,7 @@ function Book({ book }) {
       onClick={() => navigate(`/books/details/${book.id}`)}
     >
       <div className="book-image-wrapper">
-        <img className="book-image" src={book.image} alt="Image Not Available" />
+        <img className="book-image" src={book.image} alt="Not Available" />
       </div>
       <div className="book-info">
         <h3 className="book-title">{truncate(book.title, 25)}</h3>
