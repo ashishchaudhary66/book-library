@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Surge Deployed
 
-This project is deployed on Surge and URL is [https://wicked-purpose.surge.sh](https://wicked-purpose.surge.sh/).
+This project is deployed on Surge and URL is [https://agonizing-hate.surge.sh/](https://agonizing-hate.surge.sh/).
 
 ## Available Scripts
 
