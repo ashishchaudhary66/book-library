@@ -65,7 +65,7 @@ export const booksData = [
     "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
     "description": "Introduces 23 classic design patterns for building reusable and maintainable object-oriented software.",
     "published": "1994-10-31",
-    "image": "https://m.media-amazon.com/images/I/51k+eP4ZGjL._SX379_BO1,204,203,200_.jpg",
+    "image": "https://m.media-amazon.com/images/I/51kuc0iWoKL._SX379_BO1,204,203,200_.jpg",
     "read": true,
     "rating": 4.8
   },
@@ -75,7 +75,7 @@ export const booksData = [
     "author": "Martin Fowler",
     "description": "Guides how to restructure existing code to make it cleaner and more maintainable.",
     "published": "2018-11-19",
-    "image": "https://m.media-amazon.com/images/I/51kuc0iWoKL._SX379_BO1,204,203,200_.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386925632i/44936.jpg",
     "read": false,
     "rating": 4.6
   },
@@ -85,7 +85,7 @@ export const booksData = [
     "author": "Stephen R. Covey",
     "description": "Timeless lessons on effectiveness, productivity, and leadership through character development.",
     "published": "1989-08-15",
-    "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1421842784i/36072.jpg",
     "read": true,
     "rating": 4.7
   },
@@ -155,7 +155,7 @@ export const booksData = [
     "author": "David Goggins",
     "description": "A story of overcoming mental and physical obstacles to achieve greatness.",
     "published": "2018-12-04",
-    "image": "https://m.media-amazon.com/images/I/61pFv3bCsbL.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1536184191i/41721428.jpg",
     "read": true,
     "rating": 4.9
   },
@@ -195,7 +195,7 @@ export const booksData = [
     "author": "Sun Tzu",
     "description": "An ancient Chinese military treatise offering timeless lessons on strategy and leadership.",
     "published": "500 BC",
-    "image": "https://m.media-amazon.com/images/I/81n8s0qHAPL.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1630683326i/10534.jpg",
     "read": false,
     "rating": 4.2
   },
@@ -235,7 +235,7 @@ export const booksData = [
     "author": "Don Miguel Ruiz",
     "description": "A practical guide to personal freedom based on ancient Toltec wisdom.",
     "published": "1997-11-07",
-    "image": "https://m.media-amazon.com/images/I/81U0l6ejS-L.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1630664059i/6596.jpg",
     "read": false,
     "rating": 4.6
   },
@@ -245,7 +245,7 @@ export const booksData = [
     "author": "J.D. Salinger",
     "description": "A classic novel exploring teenage angst and alienation through the eyes of Holden Caulfield.",
     "published": "1951-07-16",
-    "image": "https://m.media-amazon.com/images/I/71TnrVw7uCL.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg",
     "read": false,
     "rating": 4.0
   },
@@ -255,7 +255,7 @@ export const booksData = [
     "author": "George Orwell",
     "description": "A dystopian novel that explores totalitarianism, censorship, and surveillance.",
     "published": "1949-06-08",
-    "image": "https://m.media-amazon.com/images/I/71kxa1-0zfL.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1532714506i/40961427.jpg",
     "read": true,
     "rating": 4.7
   },
