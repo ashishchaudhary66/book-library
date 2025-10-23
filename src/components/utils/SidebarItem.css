@@ -1,5 +1,5 @@
 .SidebarItem {
-  color: #cbd5e1; /* light gray */
+  color: #cbd5e1;
   padding: 12px 20px;
   margin: 5px 10px;
   border-radius: 8px;
@@ -9,13 +9,13 @@
 }
 
 .SidebarItem:hover {
-  background-color: #3b82f6; /* blue hover */
+  background-color: #3b82f6;
   color: #fff;
   transform: scale(1.02);
 }
 
 .SidebarItem.active {
-  background-color: #2563eb; /* dark blue for active */
+  background-color: #2563eb;
   color: #fff;
   font-weight: 600;
 }
