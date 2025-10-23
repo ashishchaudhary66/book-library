@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Surge Deployed
 
-This project is deployed on Surge and URL is [https://agonizing-hate.surge.sh/](https://agonizing-hate.surge.sh/).
+This project is deployed on Surge and URL is [https://bashful-airplane.surge.sh/](https://bashful-airplane.surge.sh/).
 
 ## Available Scripts
 
