@@ -3,264 +3,300 @@ export const booksData = [
     "id": "1",
     "title": "Atomic Habits",
     "author": "James Clear",
-    "description": "A practical guide to building good habits and breaking bad ones.",
+    "description": "Practical strategies for forming good habits, breaking bad ones, and mastering tiny behaviors that lead to remarkable results.",
+    "published": "2018-10-16",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
     "read": false,
-    "published": "2018-10-16"
+    "rating": 4.8
   },
   {
     "id": "2",
     "title": "Clean Code",
     "author": "Robert C. Martin",
-    "description": "A handbook of agile software craftsmanship.",
+    "description": "Teaches principles and best practices for writing clean, maintainable, and efficient code.",
+    "published": "2008-08-11",
+    "image": "https://m.media-amazon.com/images/I/41xShlnTZTL._SX374_BO1,204,203,200_.jpg",
     "read": true,
-    "published": "2008-08-01"
+    "rating": 4.7
   },
   {
     "id": "3",
     "title": "The Pragmatic Programmer",
-    "author": "Andrew Hunt and David Thomas",
-    "description": "Journeyman to master craft in software engineering.",
+    "author": "Andrew Hunt, David Thomas",
+    "description": "A modern classic for software developers about pragmatic approaches to coding, design, and career growth.",
+    "published": "1999-10-30",
+    "image": "https://m.media-amazon.com/images/I/518FqJvR9aL._SX380_BO1,204,203,200_.jpg",
     "read": false,
-    "published": "1999-10-30"
+    "rating": 4.6
   },
   {
     "id": "4",
     "title": "Deep Work",
     "author": "Cal Newport",
-    "description": "Rules for focused success in a distracted world.",
+    "description": "Explores the benefits of deep, focused work in a world full of distractions.",
+    "published": "2016-01-05",
+    "image": "https://m.media-amazon.com/images/I/71g2ednj0JL._AC_UF1000,1000_QL80_.jpg",
     "read": true,
-    "published": "2016-01-05"
+    "rating": 4.5
   },
   {
     "id": "5",
-    "title": "The 7 Habits of Highly Effective People",
-    "author": "Stephen R. Covey",
-    "description": "Timeless principles for personal and professional effectiveness.",
+    "title": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "description": "A deep dive into JavaScript mechanics and how the language truly works.",
+    "published": "2020-01-28",
+    "image": "https://m.media-amazon.com/images/I/81kqrwS1nNL._AC_UF894,1000_QL80_.jpg",
     "read": false,
-    "published": "1989-08-15"
+    "rating": 4.4
   },
   {
     "id": "6",
-    "title": "Thinking, Fast and Slow",
-    "author": "Daniel Kahneman",
-    "description": "A groundbreaking exploration of how humans think and make decisions.",
-    "read": true,
-    "published": "2011-10-25"
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "description": "Explains how modern companies use continuous innovation to create radically successful businesses.",
+    "published": "2011-09-13",
+    "image": "https://m.media-amazon.com/images/I/81-QB7nDh4L.jpg",
+    "read": false,
+    "rating": 4.3
   },
   {
     "id": "7",
-    "title": "The Lean Startup",
-    "author": "Eric Ries",
-    "description": "How today's entrepreneurs use continuous innovation to create radically successful businesses.",
-    "read": false,
-    "published": "2011-09-13"
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "description": "Introduces 23 classic design patterns for building reusable and maintainable object-oriented software.",
+    "published": "1994-10-31",
+    "image": "https://m.media-amazon.com/images/I/51k+eP4ZGjL._SX379_BO1,204,203,200_.jpg",
+    "read": true,
+    "rating": 4.8
   },
   {
     "id": "8",
-    "title": "You Don't Know JS: Scope & Closures",
-    "author": "Kyle Simpson",
-    "description": "A deep dive into the JavaScript language, focusing on scope and closures.",
-    "read": true,
-    "published": "2014-12-28"
+    "title": "Refactoring: Improving the Design of Existing Code",
+    "author": "Martin Fowler",
+    "description": "Guides how to restructure existing code to make it cleaner and more maintainable.",
+    "published": "2018-11-19",
+    "image": "https://m.media-amazon.com/images/I/51kuc0iWoKL._SX379_BO1,204,203,200_.jpg",
+    "read": false,
+    "rating": 4.6
   },
   {
     "id": "9",
-    "title": "Refactoring",
-    "author": "Martin Fowler",
-    "description": "Improving the design of existing code without changing its behavior.",
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "description": "Timeless lessons on effectiveness, productivity, and leadership through character development.",
+    "published": "1989-08-15",
+    "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
     "read": true,
-    "published": "1999-07-08"
+    "rating": 4.7
   },
   {
     "id": "10",
-    "title": "The Mythical Man-Month",
-    "author": "Frederick P. Brooks Jr.",
-    "description": "Essays on software engineering and project management.",
+    "title": "Cracking the Coding Interview",
+    "author": "Gayle Laakmann McDowell",
+    "description": "A comprehensive guide with 189 programming questions and detailed solutions to prepare for technical interviews.",
+    "published": "2015-07-01",
+    "image": "https://m.media-amazon.com/images/I/61mIq2iJUXL.jpg",
     "read": false,
-    "published": "1975-01-01"
+    "rating": 4.8
   },
   {
     "id": "11",
-    "title": "Cracking the Coding Interview",
-    "author": "Gayle Laakmann McDowell",
-    "description": "189 programming questions and solutions for technical interviews.",
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "description": "A counterintuitive guide to living a good life by focusing on what truly matters.",
+    "published": "2016-09-13",
+    "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L._AC_UF1000,1000_QL80_.jpg",
     "read": true,
-    "published": "2015-07-01"
+    "rating": 4.3
   },
   {
     "id": "12",
-    "title": "The Art of Computer Programming",
-    "author": "Donald E. Knuth",
-    "description": "Comprehensive work on algorithms and mathematical techniques.",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A fable about following your dreams and listening to your heart’s desires.",
+    "published": "1988-04-15",
+    "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
     "read": false,
-    "published": "1968-01-01"
+    "rating": 4.6
   },
   {
     "id": "13",
-    "title": "Introduction to Algorithms",
-    "author": "Thomas H. Cormen et al.",
-    "description": "A detailed textbook on modern algorithm design and analysis.",
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "description": "Lessons on financial literacy, investing, and wealth-building from two contrasting father figures.",
+    "published": "1997-04-01",
+    "image": "https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg",
     "read": true,
-    "published": "1990-09-01"
+    "rating": 4.7
   },
   {
     "id": "14",
-    "title": "Design Patterns",
-    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
-    "description": "Elements of reusable object-oriented software.",
-    "read": true,
-    "published": "1994-10-31"
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "description": "A guide to spiritual enlightenment through mindfulness and living in the present moment.",
+    "published": "1997-08-19",
+    "image": "https://m.media-amazon.com/images/I/61kRkfsIMUL.jpg",
+    "read": false,
+    "rating": 4.5
   },
   {
     "id": "15",
-    "title": "Soft Skills: The Software Developer’s Life Manual",
-    "author": "John Sonmez",
-    "description": "Career advice, personal branding, and productivity tips for developers.",
+    "title": "Start with Why",
+    "author": "Simon Sinek",
+    "description": "Explains how great leaders inspire action by focusing on their purpose — their ‘why’.",
+    "published": "2009-10-29",
+    "image": "https://m.media-amazon.com/images/I/71xBLRBYOiL.jpg",
     "read": false,
-    "published": "2014-12-29"
+    "rating": 4.4
   },
   {
     "id": "16",
-    "title": "The Clean Coder",
-    "author": "Robert C. Martin",
-    "description": "A code of conduct for professional programmers.",
+    "title": "Can't Hurt Me",
+    "author": "David Goggins",
+    "description": "A story of overcoming mental and physical obstacles to achieve greatness.",
+    "published": "2018-12-04",
+    "image": "https://m.media-amazon.com/images/I/61pFv3bCsbL.jpg",
     "read": true,
-    "published": "2011-05-13"
+    "rating": 4.9
   },
   {
     "id": "17",
-    "title": "Rework",
-    "author": "Jason Fried and David Heinemeier Hansson",
-    "description": "A fresh take on productivity and entrepreneurship.",
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "Timeless lessons on wealth, greed, and happiness from behavioral finance insights.",
+    "published": "2020-09-08",
+    "image": "https://m.media-amazon.com/images/I/81Lb75rUhLL.jpg",
     "read": false,
-    "published": "2010-03-09"
+    "rating": 4.8
   },
   {
     "id": "18",
-    "title": "The Phoenix Project",
-    "author": "Gene Kim, Kevin Behr, George Spafford",
-    "description": "A novel about IT, DevOps, and helping your business win.",
-    "read": true,
-    "published": "2013-01-10"
+    "title": "Hooked: How to Build Habit-Forming Products",
+    "author": "Nir Eyal",
+    "description": "A framework for creating products that keep users coming back through habit formation.",
+    "published": "2014-11-04",
+    "image": "https://m.media-amazon.com/images/I/81vvgZqCskL.jpg",
+    "read": false,
+    "rating": 4.4
   },
   {
     "id": "19",
-    "title": "Continuous Delivery",
-    "author": "Jez Humble and David Farley",
-    "description": "Reliable software releases through build, test, and deployment automation.",
-    "read": false,
-    "published": "2010-07-27"
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "description": "Explores the two systems of thought that drive the way we think, decide, and act.",
+    "published": "2011-10-25",
+    "image": "https://m.media-amazon.com/images/I/71HMyqG6MRL.jpg",
+    "read": true,
+    "rating": 4.6
   },
   {
     "id": "20",
-    "title": "The DevOps Handbook",
-    "author": "Gene Kim, Jez Humble, Patrick Debois, John Willis",
-    "description": "How to create world-class agility, reliability, and security in technology organizations.",
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "description": "An ancient Chinese military treatise offering timeless lessons on strategy and leadership.",
+    "published": "500 BC",
+    "image": "https://m.media-amazon.com/images/I/81n8s0qHAPL.jpg",
     "read": false,
-    "published": "2016-10-06"
+    "rating": 4.2
   },
   {
     "id": "21",
-    "title": "Extreme Programming Explained",
-    "author": "Kent Beck",
-    "description": "Embrace change with agile development principles.",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "description": "A groundbreaking exploration of human evolution and history from ancient times to modern civilization.",
+    "published": "2014-02-10",
+    "image": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
     "read": true,
-    "published": "1999-10-18"
+    "rating": 4.7
   },
   {
     "id": "22",
-    "title": "Domain-Driven Design",
-    "author": "Eric Evans",
-    "description": "Tackling complexity in the heart of software.",
+    "title": "Educated",
+    "author": "Tara Westover",
+    "description": "A memoir about a woman who grows up in a strict and abusive household but eventually escapes to learn and grow.",
+    "published": "2018-02-20",
+    "image": "https://m.media-amazon.com/images/I/81WojUxbbFL.jpg",
     "read": false,
-    "published": "2003-08-30"
+    "rating": 4.7
   },
   {
     "id": "23",
-    "title": "The Effective Engineer",
-    "author": "Edmond Lau",
-    "description": "How to leverage your efforts in engineering for maximum impact.",
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "description": "An intimate, powerful, and inspiring memoir by the former First Lady of the United States.",
+    "published": "2018-11-13",
+    "image": "https://m.media-amazon.com/images/I/81h2gWPTYJL.jpg",
     "read": true,
-    "published": "2015-03-24"
+    "rating": 4.9
   },
   {
     "id": "24",
-    "title": "Don't Make Me Think",
-    "author": "Steve Krug",
-    "description": "A common sense approach to web usability.",
-    "read": true,
-    "published": "2000-08-28"
+    "title": "The Four Agreements",
+    "author": "Don Miguel Ruiz",
+    "description": "A practical guide to personal freedom based on ancient Toltec wisdom.",
+    "published": "1997-11-07",
+    "image": "https://m.media-amazon.com/images/I/81U0l6ejS-L.jpg",
+    "read": false,
+    "rating": 4.6
   },
   {
     "id": "25",
-    "title": "Hooked",
-    "author": "Nir Eyal",
-    "description": "How to build habit-forming products.",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "A classic novel exploring teenage angst and alienation through the eyes of Holden Caulfield.",
+    "published": "1951-07-16",
+    "image": "https://m.media-amazon.com/images/I/71TnrVw7uCL.jpg",
     "read": false,
-    "published": "2014-11-04"
+    "rating": 4.0
   },
   {
     "id": "26",
-    "title": "The Design of Everyday Things",
-    "author": "Don Norman",
-    "description": "Understanding human-centered design principles.",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian novel that explores totalitarianism, censorship, and surveillance.",
+    "published": "1949-06-08",
+    "image": "https://m.media-amazon.com/images/I/71kxa1-0zfL.jpg",
     "read": true,
-    "published": "1988-01-01"
+    "rating": 4.7
   },
   {
     "id": "27",
-    "title": "Peopleware",
-    "author": "Tom DeMarco and Timothy Lister",
-    "description": "Productive projects and teams in software engineering.",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A novel about racial injustice and moral growth in the American South.",
+    "published": "1960-07-11",
+    "image": "https://m.media-amazon.com/images/I/81OthjkJBuL.jpg",
     "read": false,
-    "published": "1987-01-01"
+    "rating": 4.8
   },
   {
     "id": "28",
-    "title": "Lean Thinking",
-    "author": "James P. Womack and Daniel T. Jones",
-    "description": "Banish waste and create wealth in your corporation.",
-    "read": false,
-    "published": "1996-09-01"
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A story of love, ambition, and the American Dream during the Jazz Age.",
+    "published": "1925-04-10",
+    "image": "https://m.media-amazon.com/images/I/71FTb9X6wsL.jpg",
+    "read": true,
+    "rating": 4.5
   },
   {
     "id": "29",
-    "title": "Drive",
-    "author": "Daniel H. Pink",
-    "description": "The surprising truth about what motivates us.",
-    "read": true,
-    "published": "2009-12-29"
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A fantasy adventure following Bilbo Baggins’ journey to reclaim treasure guarded by a dragon.",
+    "published": "1937-09-21",
+    "image": "https://m.media-amazon.com/images/I/91b0C2YNSrL.jpg",
+    "read": false,
+    "rating": 4.9
   },
   {
     "id": "30",
-    "title": "Grit",
-    "author": "Angela Duckworth",
-    "description": "The power of passion and perseverance.",
-    "read": false,
-    "published": "2016-05-03"
-  },
-  {
-    "id": "31",
-    "title": "The Power of Habit",
-    "author": "Charles Duhigg",
-    "description": "Why we do what we do in life and business.",
+    "title": "Harry Potter and the Sorcerer’s Stone",
+    "author": "J.K. Rowling",
+    "description": "The first book in the legendary Harry Potter series introducing the world of magic.",
+    "published": "1997-06-26",
+    "image": "https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg",
     "read": true,
-    "published": "2012-02-28"
-  },
-  {
-    "id": "32",
-    "title": "The Manager’s Path",
-    "author": "Camille Fournier",
-    "description": "A guide for tech leaders navigating growth and change.",
-    "read": false,
-    "published": "2017-03-13"
-  },
-  {
-    "id": "33",
-    "title": "Radical Candor",
-    "author": "Kim Scott",
-    "description": "Be a kick-ass boss without losing your humanity.",
-    "read": true,
-    "published": "2017-03-14"
+    "rating": 4.9
   }
-]
+];

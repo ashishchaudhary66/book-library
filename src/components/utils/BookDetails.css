@@ -1,66 +1,54 @@
-.BookDetails {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 30px 40px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-family: "Poppins", sans-serif;
+.book-details-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+.details-image {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.details-info p {
+  margin: 0;
+  font-size: 16px;
   color: #333;
 }
 
-.BookDetails div {
+.read-toggle {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 1rem;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.BookDetails div:last-child {
-  border-bottom: none;
-}
-
-.BookDetails span:first-child {
-  font-weight: 600;
-  color: #555;
-}
-
-.BookDetails span:last-child {
-  color: #222;
-  text-align: right;
-  max-width: 60%;
-  word-wrap: break-word;
-}
-
-.BookDetails a {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
+.edit-link {
+  width: fit-content;
   margin-top: 15px;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.BookDetails a:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 600px) {
-  .BookDetails {
-    padding: 20px;
-  }
-
-  .BookDetails div {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .BookDetails span:last-child {
-    text-align: left;
-    margin-top: 4px;
-  }
+.edit-link:hover {
+  text-decoration: underline;
 }

@@ -1,55 +1,74 @@
-.Book {
-  border-radius: 12px;
-  width: 250px;
-  height: 128px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 20px 25px;
-  margin: 15px auto;
+.book-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+.book-image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.book-image {
+  width: 80px;
+  height: 120px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Badge for read books */
+.read-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #28a745;
   color: #fff;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.book-info {
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
 }
 
-.Book:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  filter: brightness(1.1);
+.book-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 
-.Book div {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-  line-height: 1.5;
+.book-author {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
 }
 
-.Book span:first-child {
-  font-weight: 600;
+.book-rating {
+  font-size: 14px;
+  color: #f39c12;
+  margin: 0;
 }
 
-.Book.read {
-  background-color: #2e8b57;
+/* Optional: different background for unread books */
+.book-card.unread {
+  background-color: #ffe0e0;
 }
 
-.Book.unread {
-  background-color: #c0392b;
-}
-
-@media (max-width: 600px) {
-  .Book {
-    padding: 15px;
-  }
-
-  .Book div {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .Book span:last-child {
-    margin-top: 4px;
-  }
+.book-card.read {
+  background-color: #e0ffe0;
 }

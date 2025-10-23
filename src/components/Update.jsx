@@ -17,7 +17,7 @@ function Update() {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: name === "rating" ? parseFloat(value) : value,
     }));
   };
 
@@ -35,6 +35,9 @@ function Update() {
     if (!formData.description.trim())
       newErrors.description = "Description is required";
     if (!formData.published) newErrors.published = "Published date is required";
+    if (!formData.image.trim()) newErrors.image = "Image URL is required";
+    if (formData.rating < 0 || formData.rating > 5)
+      newErrors.rating = "Rating must be between 0 and 5";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -45,7 +48,6 @@ function Update() {
     if (!validateForm()) return;
 
     setSubmitting(true);
-
     dispatch(updateBook(formData));
     alert("Book updated successfully!");
     setSubmitting(false);
@@ -53,9 +55,9 @@ function Update() {
 
   return (
     <div className="Update">
-      <h4>Update Book</h4>
+      <h2>Update Book</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form-group">
           <label htmlFor="title">Title</label>
           <input
             name="title"
@@ -67,7 +69,7 @@ function Update() {
           {errors.title && <p className="error">{errors.title}</p>}
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="author">Author</label>
           <input
             name="author"
@@ -79,11 +81,10 @@ function Update() {
           {errors.author && <p className="error">{errors.author}</p>}
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="description">Description</label>
-          <input
+          <textarea
             name="description"
-            type="text"
             value={formData.description}
             onChange={handleChange}
             disabled={submitting}
@@ -91,7 +92,7 @@ function Update() {
           {errors.description && <p className="error">{errors.description}</p>}
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="published">Published</label>
           <input
             name="published"
@@ -103,28 +104,64 @@ function Update() {
           {errors.published && <p className="error">{errors.published}</p>}
         </div>
 
-        <div>
+        <div className="form-group">
+          <label htmlFor="image">Image URL</label>
+          <input
+            name="image"
+            type="text"
+            value={formData.image}
+            onChange={handleChange}
+            disabled={submitting}
+          />
+          {errors.image && <p className="error">{errors.image}</p>}
+          {formData.image && (
+            <img
+              src={formData.image}
+              alt="Book"
+              className="preview-image"
+            />
+          )}
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="rating">Rating (0-5)</label>
+          <input
+            name="rating"
+            type="number"
+            min="0"
+            max="5"
+            step="0.1"
+            value={formData.rating}
+            onChange={handleChange}
+            disabled={submitting}
+          />
+          {errors.rating && <p className="error">{errors.rating}</p>}
+        </div>
+
+        <div className="form-group">
           <label>Read</label>
-          <label>
-            <input
-              type="radio"
-              name="read"
-              checked={formData.read === true}
-              onChange={() => handleRadioChange(true)}
-              disabled={submitting}
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="read"
-              checked={formData.read === false}
-              onChange={() => handleRadioChange(false)}
-              disabled={submitting}
-            />
-            No
-          </label>
+          <div className="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="read"
+                checked={formData.read === true}
+                onChange={() => handleRadioChange(true)}
+                disabled={submitting}
+              />
+              Yes
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="read"
+                checked={formData.read === false}
+                onChange={() => handleRadioChange(false)}
+                disabled={submitting}
+              />
+              No
+            </label>
+          </div>
         </div>
 
         <button type="submit" disabled={submitting}>

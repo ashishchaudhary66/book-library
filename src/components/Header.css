@@ -1,22 +1,28 @@
-.Header{
-    background-color: lightgrey;
-    display: flex;
-    height: 3rem;
-    width: 100%;
-    text-align: center;
-    font-style: italic;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, #4b79a1, #283e51);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.header-icon{
-    width: 12rem;
-    display: flex;
-    align-items: left;
+
+.header-icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 15px;
+  transition: transform 0.3s;
 }
-.header-text{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.header-icon img:hover {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.header-text {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
 }

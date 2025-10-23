@@ -1,15 +1,21 @@
-.SidebarItem{
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-    font-weight: 400;
-    font-size: large;
-    padding-left: 1rem;
+.SidebarItem {
+  color: #cbd5e1; /* light gray */
+  padding: 12px 20px;
+  margin: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
 }
-.SidebarItem:hover{
-    background-color: #717171;
-    cursor: pointer;
-    color: white;
+
+.SidebarItem:hover {
+  background-color: #3b82f6; /* blue hover */
+  color: #fff;
+  transform: scale(1.02);
+}
+
+.SidebarItem.active {
+  background-color: #2563eb; /* dark blue for active */
+  color: #fff;
+  font-weight: 600;
 }
