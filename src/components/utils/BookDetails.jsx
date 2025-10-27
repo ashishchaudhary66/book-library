@@ -2,7 +2,7 @@ import React from "react";
 import "./BookDetails.css";
 import { NavLink, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleRead } from "../../redux/slices/librarySlice";
+import { toggleRead } from "../../redux/actions/bookActions";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 
 function BookDetails() {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Update.css";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { updateBook } from "../redux/slices/librarySlice";
+import { updateBook } from "../redux/actions/bookActions";
 
 function Update() {
   const booksData = useSelector((state) => state.books.booksData);
